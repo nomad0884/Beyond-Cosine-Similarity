@@ -27,7 +27,7 @@ class NewsDeduplicator:
     def __init__(
         self,
         sts_model: str = "jhgan/ko-sbert-sts",
-        nli_model: str = "intertek-kmu/korean-nli",
+        nli_model: str = "nomad0884/korean-nli",
         sts_threshold: float = 0.8,
         nli_threshold: float = 0.5,
         novelty_threshold: float = 0.9,
