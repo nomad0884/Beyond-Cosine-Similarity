@@ -1,14 +1,17 @@
 # Korean News Deduplicator: STS-NLI Combined Pipeline
 
 This is the repository for **"코사인 유사도의 한계를 넘어서: 한국어 뉴스에서의 STS-NLI 결합 기반 신규 정보 탐지"**<br>
-(Beyond Cosine Similarity: Novel Information Detection in Korean News via Combined STS-NLI Approach). We propose a two-stage pipeline that combines Semantic Textual Similarity (STS) and Natural Language Inference (NLI) for detecting novel information in Korean news articles.
+(Beyond Cosine Similarity: Novel Information Detection in Korean News via Combined STS-NLI Approach). <br>
+We propose a two-stage pipeline that combines Semantic Textual Similarity (STS) and Natural Language Inference (NLI) for detecting novel information in Korean news articles.
 
 ## Overview
 코사인 유사도 기반 중복 탐지는 두 텍스트의 비교를 단일 스칼라 값으로 압축하여, 어떤 부분이 새로운 정보인지 식별하는 능력을 상실합니다. 본 파이프라인은 이를 다음과 같이 해결합니다:<br>
-Cosine similarity-based deduplication compresses pairwise comparisons into a single scalar, losing the ability to identify *which* portions contain new information. Our pipeline addresses this by:<br>
+Cosine similarity-based deduplication compresses pairwise comparisons into a single scalar, losing the ability to identify *which* portions contain new information. <br>
+Our pipeline addresses this by:<br>
 
 - Stage 1 (STS, Bi-Encoding): 거시적 필터링 — "얼마나 비슷한가?" / Fast macro-level filtering — "How similar are they?"
 - Stage 2 (NLI, Cross-Encoding): 문장 수준 미시 분석 — "어디가 다른가?" / Sentence-level micro-analysis — "Where do they differ?"
+<br>
 
 NLI의 Neutral 판정은 신규 정보의 대리 지표로 기능합니다. 새 기사의 문장이 기존 기사의 어떤 문장으로부터도 함의(entailment)되지 않을 경우, 해당 문장을 신규 정보로 식별합니다.<br>
 The NLI **Neutral** label serves as a proxy for novel information: sentences in a new article that cannot be entailed from any sentence in the existing article are identified as carrying new information.
