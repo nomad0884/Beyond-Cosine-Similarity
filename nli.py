@@ -9,7 +9,7 @@ LABEL_NAMES = ["entailment", "neutral", "contradiction"]
 
 
 class NLIModel:
-    def __init__(self, model_name="intertek-kmu/korean-nli"):
+    def __init__(self, model_name="nomad0884/korean-nli"):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
         self.model.eval()
