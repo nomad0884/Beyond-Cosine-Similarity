@@ -88,7 +88,7 @@ pip install korean-news-dedup
 or from source:
 
 ```bash
-git clone https://github.com/your-username/korean-news-dedup.git
+git clone https://github.com/nomad0884/Beyond-Cosine-Similarity.git
 cd korean-news-dedup
 pip install -e .
 ```
@@ -160,8 +160,6 @@ korean-news-dedup/
 │   ├── deduplicator.py      # Main pipeline class
 │   ├── sts.py                # STS model wrapper
 │   └── nli.py                # NLI model wrapper
-├── data/
-│   └── test_data.json        # Experiment data
 ├── README.md
 ├── setup.py
 ├── requirements.txt
