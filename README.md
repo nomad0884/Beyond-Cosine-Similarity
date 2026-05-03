@@ -82,14 +82,14 @@ The fine-tuned model is available at: [`nomad0884/korean-nli`](https://huggingfa
 ## Installation
 
 ```bash
-pip install korean-news-dedup
+pip install git+https://github.com/nomad0884/Beyond-Cosine-Similarity.git
 ```
 
 or from source:
 
 ```bash
 git clone https://github.com/nomad0884/Beyond-Cosine-Similarity.git
-cd korean-news-dedup
+cd Beyond-Cosine-Similarity
 pip install -e .
 ```
 
