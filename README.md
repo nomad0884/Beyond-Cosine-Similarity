@@ -145,7 +145,7 @@ unique, duplicates, has_novel = dedup.filter_news_with_nli(new_news_dict)
 ## Dataset
 
 - [test_data.json](https://drive.google.com/file/d/1jRaBhnGHn1ARsd3CDLQ5ZL8nkMcSIUxR/view?usp=sharing) — 1,184 Korean news articles (semiconductor/stock market), collected via Naver News API (keyword: 반도체)
-
+- [korean_nli_model](https://huggingface.co/nomad0884/korean-nli) - Hugginhface model weight pth.
 ### External Datasets
 
 - [KorNLI & KorSTS](https://github.com/kakaobrain/kor-nlu-datasets) — KakaoBrain (Ham et al., EMNLP 2020 Findings)
